@@ -7,7 +7,7 @@ const usersList = document.querySelector('#users');
 let myName;
 
 function connectToChat(userId) {
-  const socket = new WebSocket(`https://chat-task2-backend.herokuapp.com/${userId}`);
+  const socket = new WebSocket(`ws://chat-task2-backend.herokuapp.com?${userId}`);
   socket.addEventListener('message', (msg) => {
     const data = JSON.parse(msg.data);
 
@@ -94,7 +94,7 @@ document.getElementById('registrationForm').addEventListener('submit', (event) =
   inputName.value = '';
 
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'http://localhost:5555/register');
+  xhr.open('POST', 'https://chat-task2-backend.herokuapp.com/');
 
   xhr.onload = () => {
     if (xhr.status >= 200 && xhr.status < 400) {
