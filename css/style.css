@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+#registrationWindow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.nameLabel {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#nameInput {
+  width: 90%;
+  height: 40px;
+  border: 1px solid black;
+  margin: 10px;
+}
+
+#registrationButton {
+  border-radius: 15px;
+  width: 60%;
+  height: 60px;
+  font-size: 20px;
+  background-color: white;
+  margin: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#chat {
+  display: flex;
+  align-items: flex-start;
+  width: 90%;
+  height: 90vh;
+}
+
+#users {
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 20px 0 0 20px;
+}
+
+.listUsers {
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+#messagesWindow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 80%;
+  height: 90%;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+}
+
+#messageInput {
+  margin-top: auto;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 15px;
+  width: 90%;
+}
+
+#messages {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.message {
+  color: black;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.right {
+  text-align: right;
+}
+
+#error {
+  color: red;
+  position:fixed;
+  top: 140px;
+  left: 45px;
+}
+
+.messageHeader {
+  margin-top: 15px;
+  color: darkgrey;
+}
+
+.red {
+  color: red;
+}
+
+.text {
+  text-align: right;
+  margin-right: 80px;
+  margin-top: 20px;
+}
