@@ -94,7 +94,7 @@ document.getElementById('registrationForm').addEventListener('submit', (event) =
   inputName.value = '';
 
   const xhr = new XMLHttpRequest();
-  xhr.open('POST', 'https://chat-task2-backend.herokuapp.com/');
+  xhr.open('POST', 'https://chat-task2-backend.herokuapp.com/register');
 
   xhr.onload = () => {
     if (xhr.status >= 200 && xhr.status < 400) {
