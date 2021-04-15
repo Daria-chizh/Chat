@@ -7,7 +7,7 @@ const usersList = document.querySelector('#users');
 let myName;
 
 function connectToChat(userId) {
-  const socket = new WebSocket(`ws://localhost:5555?${userId}`);
+  const socket = new WebSocket(`https://chat-task2-backend.herokuapp.com/${userId}`);
   socket.addEventListener('message', (msg) => {
     const data = JSON.parse(msg.data);
 
