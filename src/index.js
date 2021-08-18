@@ -45,8 +45,9 @@ function connectToChat(userId) {
     function addUserToList(user) {
       const listUsers = document.createElement('div');
       listUsers.classList.add('listUsers');
-      listUsers.textContent = `● ${user}`;
       usersList.appendChild(listUsers);
+
+      listUsers.textContent = myName === user ? '● You' : `● ${user}`;
     }
 
     if (data.type === 'initial') {
